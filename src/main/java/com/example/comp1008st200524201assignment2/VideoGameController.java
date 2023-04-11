@@ -56,7 +56,8 @@ public class VideoGameController implements Initializable {
             titleLabel.setText(videoGameSelected.getTitle());
             authorLabel.setText(videoGameSelected.getDevelopers());
             priceLabel.setText(videoGameSelected.getPrice());
-            gameImages.setImage(new Image(VideoGame.class.getResourceAsStream("images/callofduty4.png")));
+            gameImages.setImage(new Image(VideoGame.class.getResourceAsStream("images/callofduty4.jpg")));
+
         });
     }
 }

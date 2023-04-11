@@ -10,10 +10,10 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.comp1008st200524201assignment2.VideoGameController">
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.comp1008st200524201assignment2.VideoGameController">
    <children>
       <ListView fx:id="listView" layoutX="517.0" layoutY="66.0" prefHeight="402.0" prefWidth="254.0" />
-      <Label layoutX="23.0" layoutY="20.0" prefHeight="46.0" prefWidth="273.0" text="Logan's Online Game Store">
+      <Label fx:id="gameStoreName" layoutX="23.0" layoutY="20.0" prefHeight="60.0" prefWidth="281.0" text="Logan's Online Game Store">
          <font>
             <Font size="18.0" />
          </font>
