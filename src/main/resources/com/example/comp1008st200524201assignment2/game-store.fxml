@@ -1,16 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.comp1008st200524201assignment2.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.comp1008st200524201assignment2.VideoGameController">
+   <children>
+      <ListView fx:id="listView" layoutX="517.0" layoutY="66.0" prefHeight="402.0" prefWidth="254.0" />
+      <Label layoutX="23.0" layoutY="20.0" prefHeight="46.0" prefWidth="273.0" text="Logan's Online Game Store">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="gameImages" fitHeight="224.0" fitWidth="200.0" layoutX="284.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true" />
+      <VBox layoutX="23.0" layoutY="361.0" spacing="8.0" />
+      <Label layoutX="86.0" layoutY="339.0" text="Add New Game" />
+      <VBox layoutY="385.0" spacing="8.0">
+         <children>
+            <Label text="Title:" />
+            <Label text="Developer:" />
+            <Label text="Price:" />
+         </children>
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+      </VBox>
+      <Button layoutX="337.0" layoutY="416.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="125.0" text="Add Game" />
+      <VBox layoutX="113.0" layoutY="387.0" spacing="15.0">
+         <children>
+            <TextField prefHeight="22.0" prefWidth="201.0">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </TextField>
+            <TextField prefHeight="22.0" prefWidth="201.0">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </TextField>
+            <TextField prefHeight="22.0" prefWidth="201.0">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </TextField>
+         </children>
+      </VBox>
+      <VBox layoutX="484.0" layoutY="268.0" spacing="8.0">
+         <children>
+            <Label fx:id="gameTitle" />
+            <Label fx:id="gameAuthor" />
+            <Label fx:id="gamePrice" />
+         </children>
+      </VBox>
+      <VBox layoutX="23.0" layoutY="160.0" spacing="8.0">
+         <children>
+            <Label fx:id="titleLabel" />
+            <Label fx:id="authorLabel" />
+            <Label fx:id="priceLabel" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -3,8 +3,19 @@ package com.example.comp1008st200524201assignment2;
 public class VideoGame {
     private String title;
     private String pathImage;
-    private String author;
-    private double price;
+    private String developers;
+    private String price;
+
+    public VideoGame(String title, String developers, String price, String pathImage) {
+        setTitle(title);
+        setDevelopers(developers);
+        setPrice(price);
+        setPathImage(pathImage);
+    }
+
+    public void setDevelopers(String developers) {
+        this.developers = developers;
+    }
 
     public String getTitle() {
         return title;
@@ -14,16 +25,32 @@ public class VideoGame {
         this.title = title;
     }
 
-    public double getPrice() {
+    public String getPathImage() {
+        return pathImage;
+    }
+
+    public void setPathImage(String pathImage) {
+        this.pathImage = pathImage;
+    }
+
+    public String getDevelopers() {
+        return developers;
+    }
+
+    public void setAuthor(String author) {
+        this.developers = author;
+    }
+
+    public String getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(String price) {
         this.price = price;
     }
 
     public String toString()
     {
-        return title + " " + author + " " + price;
+        return String.format(title, developers, price, pathImage);
     }
 }
