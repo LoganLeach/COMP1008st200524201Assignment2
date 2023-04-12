@@ -15,6 +15,7 @@ public class VideoGame {
         setPathImage(pathImage);
     }
 
+
     public void setDevelopers(String developers) {
         this.developers = developers;
     }
