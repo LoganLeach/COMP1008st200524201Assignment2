@@ -50,7 +50,7 @@ public class VideoGameController implements Initializable {
         String title = titleAdd.getText();
         String developer = developerAdd.getText();
         String price = priceAdd.getText();
-        String imagePath = "images/gameselect.png";
+        String imagePath = "images/gameno.png";
 
         VideoGame newGame = new VideoGame("Title: " + title, "Devs: " + developer, "Price: " + price, imagePath);
         listView.getItems().add(newGame);
@@ -78,7 +78,8 @@ public class VideoGameController implements Initializable {
             titleLabel.setText(videoGameSelected.getTitle());
             authorLabel.setText(videoGameSelected.getDevelopers());
             priceLabel.setText(videoGameSelected.getPrice());
-
+            String imagePath = videoGameSelected.getPathImage();
+            gameImages.setImage(new Image(VideoGame.class.getResourceAsStream(imagePath)));
         });
     }
 }

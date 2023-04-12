@@ -56,10 +56,4 @@ public class VideoGame {
         return String.format(title, developers, price, pathImage);
     }
 
-    public Image getImage()
-    {
-        String pathName = "images/call_of_duty.png"+"images/duty_of_call"+"images/call_of_game";
-        return new Image(VideoGame.class.getResourceAsStream(pathName));
-    }
-
 }
