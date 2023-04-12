@@ -1,0 +1,1 @@
+Online video game store built with JavaFX is a one-stop destination for gaming enthusiasts, where they can browse and purchase the latest video games for all popular gaming platforms. The online store features a user-friendly interface that makes it easy for gamers to find the games they want and purchase them.
